@@ -45,8 +45,9 @@ Because the full dataset is over 2GB, training it locally can cause out-of-memor
    !pip install "numpy<2.0.0" scikit-surprise
    ```
 5. Paste the entire training pipeline from `src/train.py` (or the monolithic snippet provided in the documentation) into your **second cell** and run it.
-6. Once training finishes, Kaggle will generate `svd_model.pkl` in the `/kaggle/working/` directory. **Download this file** along with the `movie_titles.csv`(not necessary, already here in the repo) file.
-7. For directly downloading the `svd_model.pkl` file which we generated, you can refer : https://drive.google.com/file/d/1LLddtmh3lbmeqCZ5OTQDjHmKlSHIFMj9/view?usp=sharing
+6. Our Kaggle Notebook for the same : https://www.kaggle.com/code/aaravsingh1306/notebook6d26f68a45?scriptVersionId=326585522
+7. Once training finishes, Kaggle will generate `svd_model.pkl` in the `/kaggle/working/` directory. **Download this file** along with the `movie_titles.csv`(not necessary, already here in the repo) file.
+8. For directly downloading the `svd_model.pkl` file which we generated, you can refer : https://drive.google.com/file/d/1LLddtmh3lbmeqCZ5OTQDjHmKlSHIFMj9/view?usp=sharing
 
 ---
 
