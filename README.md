@@ -1,9 +1,5 @@
 # 🎬 Netflix Prize Recommendation System
 
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![scikit-surprise](https://img.shields.io/badge/scikit--surprise-1.1.5-lightgrey.svg)](http://surpriselib.com/)
-
 A complete, end-to-end recommendation system built for the Open Projects 2026 challenge using the legendary **[Netflix Prize Dataset](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data)**.
 
 This project implements Collaborative Filtering models capable of predicting user preferences across a massive, highly sparse matrix of over 100 million movie ratings. It evaluates these models using strict RMSE and MAP@10 metrics and wraps the final predictive engine in a beautiful, interactive Streamlit web dashboard.
