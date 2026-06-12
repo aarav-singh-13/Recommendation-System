@@ -1,0 +1,6 @@
+venv/
+data/*.txt
+data/*.csv
+models/*.pkl
+__pycache__/
+.DS_Store

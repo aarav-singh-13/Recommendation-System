@@ -1,0 +1,4 @@
+Total Ratings: 20000
+Total Users: 1998
+Total Movies: 500
+Dataset Sparsity: 97.9980%
