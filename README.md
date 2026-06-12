@@ -1,4 +1,4 @@
-# 🎬 Netflix Prize Recommendation System
+#  Netflix Prize Recommendation System
 
 A complete, end-to-end recommendation system built for the Open Projects 2026 challenge using the legendary **[Netflix Prize Dataset](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data)**.
 
@@ -6,7 +6,7 @@ This project implements Collaborative Filtering models capable of predicting use
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Matrix Factorization (SVD):** A highly scalable implementation of Singular Value Decomposition that handles 98%+ sparsity with ease.
 - **Advanced Evaluation:** Includes custom logic to compute `MAP@10` (Mean Average Precision) alongside traditional `RMSE`.
@@ -15,7 +15,7 @@ This project implements Collaborative Filtering models capable of predicting use
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 netflix_recommendation/
@@ -25,7 +25,7 @@ netflix_recommendation/
 ├── notebooks/                  # EDA Scripts & Visualizations
 ├── deliverables/               # Final deliverables (Technical Report & Presentation)
 │   └── figures/                # Output graphs and dashboard screenshots
-├── models/                     # Saved model artifacts (.pkl files)
+├── models/                     # Saved model artifacts (.pkl files),Not here due to large size
 ├── app.py                      # Streamlit Interactive Dashboard
 ├── requirements.txt            # Python dependencies
 └── .gitignore                  # Prevents huge data/model files from being uploaded
@@ -33,7 +33,7 @@ netflix_recommendation/
 
 ---
 
-## 🚀 How to Train on the Real Dataset (Kaggle)
+##  How to Train on the Real Dataset (Kaggle)
 
 Because the full dataset is over 2GB, training it locally can cause out-of-memory errors on standard laptops. We highly recommend doing the "heavy lifting" on Kaggle.
 
@@ -45,16 +45,17 @@ Because the full dataset is over 2GB, training it locally can cause out-of-memor
    !pip install "numpy<2.0.0" scikit-surprise
    ```
 5. Paste the entire training pipeline from `src/train.py` (or the monolithic snippet provided in the documentation) into your **second cell** and run it.
-6. Once training finishes, Kaggle will generate `svd_model.pkl` in the `/kaggle/working/` directory. **Download this file** along with the `movie_titles.csv` file!
+6. Once training finishes, Kaggle will generate `svd_model.pkl` in the `/kaggle/working/` directory. **Download this file** along with the `movie_titles.csv`(not necessary, already here in the repo) file.
+7. For directly downloading the `svd_model.pkl` file which we generated, you can refer : https://drive.google.com/file/d/1LLddtmh3lbmeqCZ5OTQDjHmKlSHIFMj9/view?usp=sharing
 
 ---
 
-## 💻 How to Run the Dashboard Locally
+##  How to Run the Dashboard Locally
 
 Once you have your trained `svd_model.pkl` and `movie_titles.csv` from Kaggle, you can run the dashboard on your own machine!
 
 1. Place `svd_model.pkl` into the `models/` folder.
-2. Place `movie_titles.csv` into the `data/` folder.
+2. Place `movie_titles.csv` into the `data/` folder.(Already in the repo)
 3. Open your terminal in this project directory and activate the virtual environment:
    ```bash
    # On Windows:
@@ -75,7 +76,7 @@ A browser window will automatically open showing your interactive recommendation
 
 ---
 
-## 📈 Experimental Results
+##  Experimental Results
 
 Our Matrix Factorization (SVD) model achieved the following metrics when trained on a sample of the dataset:
 - **RMSE:** 0.9736
